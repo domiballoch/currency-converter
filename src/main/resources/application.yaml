@@ -1,0 +1,42 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /converter
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: converter
+
+log:
+  service: ${spring.application.name}
+  appender: CONSOLE
+  level: DEBUG
+
+exchange-rate:
+  pound:
+    EURO: 1.1500954
+    USD: 1.3989317
+    YEN: 151.8759
+    YUAN: 8.9973014
+  usd:
+    POUND: 0.71483119
+    EURO: 0.82212403
+    YEN: 108.56563
+    YUAN: 6.4315516
+  euro:
+    POUND: 0.86949312
+    USD: 1.2163615
+    YEN: 132.05505
+    YUAN: 7.8230916
+  yen:
+    POUND: 0.0065843233
+    EURO: 0.0075725996
+    USD: 0.0092110185
+    YUAN: 0.059241141
+  yuan:
+    POUND: 0.11114444
+    EURO: 0.1278267
+    USD: 0.15548348
+    YEN: 16.880161

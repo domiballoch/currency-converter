@@ -1,0 +1,25 @@
+<h1>Currency Converter Example</h1>
+<h4>Author: Dominic Balloch</h4>
+
+<h3>Description</h3>
+A currency converter example using five currencies with tests, no DB or controller needed.
+
+<h3>Design</h3>
+Strategy pattern using a converter interface and a switch statement.
+<br/>Currency as Emun and exchange rate as BigDecimal in config properties.
+
+<h3>Learning Outcomes</h3>
+Advanced strategy pattern.
+
+<h3>Prerequisites</h3>
+Java 11
+<br/> Spring Boot 2.4.5
+<br/>Maven 3.6.3
+<br/>No SQL required
+
+<h3>Build project</h3>
+mvn clean install
+<br/>spring-boot:run
+
+<h3>Logging level</h3>
+DEBUG - set filepath as/if required
