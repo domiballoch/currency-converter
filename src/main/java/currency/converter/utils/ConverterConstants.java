@@ -1,5 +1,6 @@
 package currency.converter.utils;
 
+import currency.converter.domain.CurrencyType;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
@@ -34,5 +35,4 @@ public class ConverterConstants {
     public static String RESULT = "Result: ";
     public static String NEW_LINE = "\n";
     public static String SPACE = " ";
-    public static String CURRENCY_TYPE_NOT_VALID = "This currency type is not valid: ";
 }
