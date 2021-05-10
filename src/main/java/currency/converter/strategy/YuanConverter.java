@@ -40,7 +40,7 @@ public class YuanConverter implements Converter {
     }
 
     public void yuanToPounds(final BigDecimal amount) {
-        BigDecimal yuanToPounds = amount.multiply(configProperties.getEuro().get(CurrencyType.POUND));
+        BigDecimal yuanToPounds = amount.multiply(configProperties.getYuan().get(CurrencyType.POUND));
         log.info(NEW_LINE + YUAN_TO_POUNDS +
                 NEW_LINE + AMOUNT + amount + SPACE + CurrencyType.YUAN.getCurrencyTypeCode() +
                 NEW_LINE + RESULT + yuanToPounds + SPACE + CurrencyType.POUND.getCurrencyTypeCode());
@@ -48,7 +48,7 @@ public class YuanConverter implements Converter {
     }
 
     public void yuanToUsd(final BigDecimal amount) {
-        BigDecimal yuanToUsd = amount.multiply(configProperties.getEuro().get(CurrencyType.USD));
+        BigDecimal yuanToUsd = amount.multiply(configProperties.getYuan().get(CurrencyType.USD));
         log.info(NEW_LINE + YUAN_TO_USD +
                 NEW_LINE + AMOUNT + amount + SPACE + CurrencyType.YUAN.getCurrencyTypeCode() +
                 NEW_LINE + RESULT + yuanToUsd + SPACE + CurrencyType.USD.getCurrencyTypeCode());
@@ -56,7 +56,7 @@ public class YuanConverter implements Converter {
     }
 
     public void yuanToEuros(final BigDecimal amount) {
-        BigDecimal yuanToEuros = amount.multiply(configProperties.getEuro().get(CurrencyType.EURO));
+        BigDecimal yuanToEuros = amount.multiply(configProperties.getYuan().get(CurrencyType.EURO));
         log.info(NEW_LINE + YUAN_TO_EUROS +
                 NEW_LINE + AMOUNT + amount + SPACE + CurrencyType.YUAN.getCurrencyTypeCode() +
                 NEW_LINE + RESULT + yuanToEuros + SPACE + CurrencyType.EURO.getCurrencyTypeCode());
@@ -64,7 +64,7 @@ public class YuanConverter implements Converter {
     }
 
     public void yuanToYen(final BigDecimal amount) {
-        BigDecimal yuanToYen = amount.multiply(configProperties.getEuro().get(CurrencyType.YEN));
+        BigDecimal yuanToYen = amount.multiply(configProperties.getYuan().get(CurrencyType.YEN));
         log.info(NEW_LINE + YUAN_TO_YEN +
                 NEW_LINE + AMOUNT + amount + SPACE + CurrencyType.YUAN.getCurrencyTypeCode() +
                 NEW_LINE + RESULT + yuanToYen + SPACE + CurrencyType.YEN.getCurrencyTypeCode());

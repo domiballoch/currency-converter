@@ -34,4 +34,5 @@ public class ConverterConstants {
     public static String RESULT = "Result: ";
     public static String NEW_LINE = "\n";
     public static String SPACE = " ";
+    public static String INVALID_TYPE = "Currency is invalid ";
 }

@@ -70,7 +70,7 @@ public class ConverterTest {
         final Map<String, BigDecimal> amount = yuanConverter.convert(new BigDecimal("100.00"));
         assertThat(amount.get(YUAN_TO_POUNDS)).isEqualByComparingTo(new BigDecimal("011.114444000"));
         assertThat(amount.get(YUAN_TO_EUROS)).isEqualByComparingTo(new BigDecimal("012.782670000"));
-        assertThat(amount.get(YEN_TO_USD)).isEqualByComparingTo(new BigDecimal("015.548348000"));
+        assertThat(amount.get(YUAN_TO_USD)).isEqualByComparingTo(new BigDecimal("015.548348000"));
         assertThat(amount.get(YUAN_TO_YEN)).isEqualByComparingTo(new BigDecimal("1688.016100000"));
     }
 }

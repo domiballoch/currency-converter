@@ -3,6 +3,7 @@ package currency.converter.service;
 import currency.converter.domain.CurrencyType;
 import currency.converter.helper.ConversionsHelper;
 import currency.converter.strategy.Converter;
+import currency.converter.utils.ConverterUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,6 +21,6 @@ public class ClientServiceImpl implements ClientService {
     @Override
     public Map<String, BigDecimal> getConversions(final BigDecimal amount, final CurrencyType currencyType) {
         final Converter converter = conversionsHelper.applyConversions(currencyType);
-        return converter.convert(amount);
+        return converter.convert(ConverterUtils.returnValueWithScale(amount));
     }
 }

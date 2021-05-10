@@ -11,6 +11,7 @@ import currency.converter.strategy.YuanConverter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import static currency.converter.utils.ConverterConstants.INVALID_TYPE;
 
 @Slf4j
 @Component
@@ -54,6 +55,8 @@ public class ConversionsHelper {
             case YUAN:
                 converterContext.setConverter(yuanConverter);
                 break;
+            default:
+                throw new IllegalArgumentException(INVALID_TYPE + currencyType);
         }
         return converterContext.getConverter();
     }
