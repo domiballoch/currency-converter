@@ -8,6 +8,8 @@ spring:
     active: dev
   application:
     name: converter
+  main:
+    web-application-type: none
 
 log:
   service: ${spring.application.name}
