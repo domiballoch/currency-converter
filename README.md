@@ -2,11 +2,12 @@
 <h4>Author: Dominic Balloch</h4>
 
 <h3>Description</h3>
-A currency converter example using five currencies with tests, no DB or controller needed.
+A currency converter example using five currencies with tests.
+<BR/>Rest controller added but DB is not needed.
 
 <h3>Design</h3>
 Strategy pattern using a converter interface and a switch statement.
-<br/>Currency as Emun and exchange rate as BigDecimal in config properties.
+<br/>Currency as Enum and exchange rate as BigDecimal in config properties.
 
 <h3>Learning Outcomes</h3>
 Advanced strategy pattern.
@@ -20,6 +21,12 @@ Java 11
 <h3>Build project</h3>
 mvn clean install
 <br/>spring-boot:run
+
+<h3>Endpoint</h3>
+localhost:8080/converter/convert/{amount}/{currencyType}
+<br/>For amount put any figure.
+<br/>For currency type it has to be an enum, in capitals such as:
+<br/>POUND, USD, EURO, YEN, YUAN
 
 <h3>Logging level</h3>
 DEBUG - set filepath as/if required
