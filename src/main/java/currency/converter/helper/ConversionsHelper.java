@@ -38,6 +38,12 @@ public class ConversionsHelper {
     @Autowired
     private YuanConverter yuanConverter;
 
+    /**
+     * Returns Converter dynamically based on Currency Type
+     *
+     * @param currencyType
+     * @return Converter Interface
+     */
     public Converter applyConversions(CurrencyType currencyType) {
         switch (currencyType) {
             case POUND:

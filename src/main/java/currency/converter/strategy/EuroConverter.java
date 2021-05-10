@@ -30,6 +30,12 @@ public class EuroConverter implements Converter {
         this.configProperties = configProperties;
     }
 
+    /**
+     * Returns all conversion methods and calculation with String and BigDecimal
+     *
+     * @param amount
+     * @return all conversion methods
+     */
     @Override
     public Map<String, BigDecimal> convert(final BigDecimal amount) {
         eurosToPounds(amount);

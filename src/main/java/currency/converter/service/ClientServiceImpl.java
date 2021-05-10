@@ -18,6 +18,13 @@ public class ClientServiceImpl implements ClientService {
     @Autowired
     private ConversionsHelper conversionsHelper;
 
+    /**
+     * Returns the conversion being made & the actual conversion amount
+     *
+     * @param amount
+     * @param currencyType
+     * @return Map of String & BigDecimal
+     */
     @Override
     public Map<String, BigDecimal> getConversions(final BigDecimal amount, final CurrencyType currencyType) {
         final Converter converter = conversionsHelper.applyConversions(currencyType);

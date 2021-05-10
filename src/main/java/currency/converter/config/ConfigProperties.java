@@ -15,8 +15,6 @@ import java.util.Map;
 @ConfigurationProperties(prefix = "exchange-rate")
 public class ConfigProperties {
 
-
-
     private Map<CurrencyType, BigDecimal> pound;
     private Map<CurrencyType, BigDecimal> usd;
     private Map<CurrencyType, BigDecimal> euro;
