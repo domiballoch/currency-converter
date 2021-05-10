@@ -1,6 +1,5 @@
 package currency.converter.utils;
 
-import currency.converter.domain.CurrencyType;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass

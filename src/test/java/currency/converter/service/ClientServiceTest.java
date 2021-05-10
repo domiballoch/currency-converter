@@ -2,17 +2,33 @@ package currency.converter.service;
 
 import currency.converter.domain.CurrencyType;
 import org.junit.jupiter.api.Test;
-import org.mockito.internal.matchers.Null;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.math.BigDecimal;
 import java.util.Map;
 
+import static currency.converter.utils.ConverterConstants.EUROS_TO_POUNDS;
+import static currency.converter.utils.ConverterConstants.EUROS_TO_USD;
+import static currency.converter.utils.ConverterConstants.EUROS_TO_YEN;
+import static currency.converter.utils.ConverterConstants.EUROS_TO_YUAN;
+import static currency.converter.utils.ConverterConstants.POUNDS_TO_EUROS;
+import static currency.converter.utils.ConverterConstants.POUNDS_TO_USD;
+import static currency.converter.utils.ConverterConstants.POUNDS_TO_YEN;
+import static currency.converter.utils.ConverterConstants.POUNDS_TO_YUAN;
+import static currency.converter.utils.ConverterConstants.USD_TO_EUROS;
+import static currency.converter.utils.ConverterConstants.USD_TO_POUNDS;
+import static currency.converter.utils.ConverterConstants.USD_TO_YEN;
+import static currency.converter.utils.ConverterConstants.USD_TO_YUAN;
+import static currency.converter.utils.ConverterConstants.YEN_TO_EUROS;
+import static currency.converter.utils.ConverterConstants.YEN_TO_POUNDS;
+import static currency.converter.utils.ConverterConstants.YEN_TO_USD;
+import static currency.converter.utils.ConverterConstants.YEN_TO_YUAN;
+import static currency.converter.utils.ConverterConstants.YUAN_TO_EUROS;
+import static currency.converter.utils.ConverterConstants.YUAN_TO_POUNDS;
+import static currency.converter.utils.ConverterConstants.YUAN_TO_USD;
+import static currency.converter.utils.ConverterConstants.YUAN_TO_YEN;
 import static org.assertj.core.api.Assertions.assertThat;
-import static currency.converter.utils.ConverterConstants.*;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
 public class ClientServiceTest {
