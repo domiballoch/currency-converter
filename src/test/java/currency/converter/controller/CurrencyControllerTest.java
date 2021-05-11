@@ -25,6 +25,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @WebMvcTest(CurrencyController.class)
@@ -54,7 +55,6 @@ public class CurrencyControllerTest {
                         .accept(MediaType.APPLICATION_JSON))
                         .andDo(print())
                         .andExpect(status().isOk());
-                        //.andExpect(jsonPath("$.isbn").value(4));
 
         final Map<String, BigDecimal> result = getResponseFrom(resultActions, objectMapper, new TypeReference<>() {});
         assertThat(result).isEqualTo(TestUtils.returnTestResponse_pounds());
