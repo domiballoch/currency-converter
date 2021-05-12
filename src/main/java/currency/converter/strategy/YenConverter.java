@@ -45,7 +45,7 @@ public class YenConverter implements Converter {
         return yenConversionsMap;
     }
 
-    public void yenToPounds(final BigDecimal amount) {
+    private void yenToPounds(final BigDecimal amount) {
         BigDecimal yenToPounds = amount.multiply(configProperties.getYen().get(CurrencyType.POUND));
         log.info(NEW_LINE + YEN_TO_POUNDS +
                 NEW_LINE + AMOUNT + amount + SPACE + CurrencyType.YEN.getCurrencyTypeCode() +
@@ -53,7 +53,7 @@ public class YenConverter implements Converter {
         yenConversionsMap.put(YEN_TO_POUNDS, yenToPounds);
     }
 
-    public void yenToUsd(final BigDecimal amount) {
+    private void yenToUsd(final BigDecimal amount) {
         BigDecimal yenToUsd = amount.multiply(configProperties.getYen().get(CurrencyType.USD));
         log.info(NEW_LINE + YEN_TO_USD +
                 NEW_LINE + AMOUNT + amount + SPACE + CurrencyType.YEN.getCurrencyTypeCode() +
@@ -61,7 +61,7 @@ public class YenConverter implements Converter {
         yenConversionsMap.put(YEN_TO_USD, yenToUsd);
     }
 
-    public void yenToEuros(final BigDecimal amount) {
+    private void yenToEuros(final BigDecimal amount) {
         BigDecimal yenToEuros = amount.multiply(configProperties.getYen().get(CurrencyType.EURO));
         log.info(NEW_LINE + YEN_TO_EUROS +
                 NEW_LINE + AMOUNT + amount + SPACE + CurrencyType.YEN.getCurrencyTypeCode() +
@@ -69,7 +69,7 @@ public class YenConverter implements Converter {
         yenConversionsMap.put(YEN_TO_EUROS, yenToEuros);
     }
 
-    public void yenToYuan(final BigDecimal amount) {
+    private void yenToYuan(final BigDecimal amount) {
         BigDecimal yenToYuan = amount.multiply(configProperties.getYen().get(CurrencyType.YUAN));
         log.info(NEW_LINE + YEN_TO_YUAN +
                 NEW_LINE + AMOUNT + amount + SPACE + CurrencyType.YEN.getCurrencyTypeCode() +

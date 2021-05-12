@@ -45,7 +45,7 @@ public class PoundConverter implements Converter {
         return poundConversionsMap;
     }
 
-    public void poundsToEuros(final BigDecimal amount) {
+    private void poundsToEuros(final BigDecimal amount) {
         BigDecimal poundsToEuros = amount.multiply(configProperties.getPound().get(CurrencyType.EURO));
         log.info(NEW_LINE + POUNDS_TO_EUROS +
                  NEW_LINE + AMOUNT + amount + SPACE + CurrencyType.POUND.getCurrencyTypeCode() +
@@ -53,7 +53,7 @@ public class PoundConverter implements Converter {
         poundConversionsMap.put(POUNDS_TO_EUROS, poundsToEuros);
     }
 
-    public void poundsToUsd(final BigDecimal amount) {
+    private void poundsToUsd(final BigDecimal amount) {
         BigDecimal poundsToUsd = amount.multiply(configProperties.getPound().get(CurrencyType.USD));
         log.info(NEW_LINE + POUNDS_TO_USD +
                  NEW_LINE + AMOUNT + amount + SPACE + CurrencyType.POUND.getCurrencyTypeCode() +
@@ -61,7 +61,7 @@ public class PoundConverter implements Converter {
         poundConversionsMap.put(POUNDS_TO_USD, poundsToUsd);
     }
 
-    public void poundsToYen(final BigDecimal amount) {
+    private void poundsToYen(final BigDecimal amount) {
         BigDecimal poundsToYen = amount.multiply(configProperties.getPound().get(CurrencyType.YEN));
         log.info(NEW_LINE + POUNDS_TO_YEN +
                  NEW_LINE + AMOUNT + amount + SPACE + CurrencyType.POUND.getCurrencyTypeCode() +
@@ -69,7 +69,7 @@ public class PoundConverter implements Converter {
         poundConversionsMap.put(POUNDS_TO_YEN, poundsToYen);
     }
 
-    public void poundsToYuan(final BigDecimal amount) {
+    private void poundsToYuan(final BigDecimal amount) {
         BigDecimal poundsToYuan = amount.multiply(configProperties.getPound().get(CurrencyType.YUAN));
         log.info(NEW_LINE + POUNDS_TO_YUAN +
                  NEW_LINE + AMOUNT + amount + SPACE + CurrencyType.POUND.getCurrencyTypeCode() +
