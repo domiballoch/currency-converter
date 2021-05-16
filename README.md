@@ -1,7 +1,7 @@
 [![Actions Status](https://github.com/domiballoch/currency-converter/actions/workflows/maven.yml/badge.svg)](https://github.com/domiballoch/currency-converter/actions)
 [![codecov](https://codecov.io/gh/domiballoch/currency-converter/branch/master/graph/badge.svg?token=3DQWELQG2V)](https://codecov.io/gh/domiballoch/currency-converter)
 [![GitHub version](https://badge.fury.io/gh/domiballoch%2Fcurrency-converter.svg)](https://badge.fury.io/gh/domiballoch%2Fcurrency-converter)
-[![forthebadge](https://forthebadge.com/images/badges/built-by-neckbeards.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-crayons.svg)](https://forthebadge.com)
 
 <h1>Currency Converter Example</h1>
 <h4>Author: Dominic Balloch</h4>
