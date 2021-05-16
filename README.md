@@ -1,4 +1,5 @@
 [![Actions Status](https://github.com/domiballoch/currency-converter/actions/workflows/maven.yml/badge.svg)](https://github.com/domiballoch/currency-converter/actions)
+[![codecov](https://codecov.io/gh/domiballoch/currency-converter/branch/master/graph/badge.svg?token=3DQWELQG2V)](https://codecov.io/gh/domiballoch/currency-converter)
 
 <h1>Currency Converter Example</h1>
 <h4>Author: Dominic Balloch</h4>
