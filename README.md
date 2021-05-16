@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/domiballoch/currency-converter/actions/workflows/maven.yml/badge.svg)](https://github.com/domiballoch/currency-converter/actions)
+
 <h1>Currency Converter Example</h1>
 <h4>Author: Dominic Balloch</h4>
 
